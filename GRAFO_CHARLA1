@@ -1,0 +1,101 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Crear un grafo vacío
+G = nx.Graph()
+
+# Grafo 1: Conceptos principales
+conceptos = [
+    "Transformación Digital", 
+    "Inteligencia Artificial", 
+    "Big Data", 
+    "Ética", 
+    "Negocios", 
+    "Educación", 
+    "Salud"
+]
+relaciones_conceptos = [
+    ("Transformación Digital", "Inteligencia Artificial"),
+    ("Transformación Digital", "Big Data"),
+    ("Inteligencia Artificial", "Negocios"),
+    ("Inteligencia Artificial", "Educación"),
+    ("Inteligencia Artificial", "Salud"),
+    ("Big Data", "Negocios"),
+    ("Big Data", "Ética"),
+    ("Ética", "Salud"),
+    ("Ética", "Negocios"),
+]
+
+G.add_nodes_from(conceptos)
+G.add_edges_from(relaciones_conceptos)
+
+# Dibujar el grafo 1
+plt.figure(figsize=(8, 8))
+pos = nx.spring_layout(G)
+nx.draw(
+    G, pos, with_labels=True, node_color='skyblue', node_size=3000, 
+    font_size=10, font_weight='bold', edge_color='gray'
+)
+plt.title("Grafo de Conceptos Principales", fontsize=16)
+plt.show()
+
+# Grafo 2: Ejemplos prácticos
+G2 = nx.Graph()
+
+ejemplos = [
+    "Negocios", "Educación", "Salud",
+    "Optimización de ventas", "Inventarios", "Jornada laboral",
+    "Uso de ChatGPT", "Creatividad en tareas",
+    "Modelos predictivos", "Consultas prenatales"
+]
+relaciones_ejemplos = [
+    ("Negocios", "Optimización de ventas"),
+    ("Negocios", "Inventarios"),
+    ("Negocios", "Jornada laboral"),
+    ("Educación", "Uso de ChatGPT"),
+    ("Educación", "Creatividad en tareas"),
+    ("Salud", "Modelos predictivos"),
+    ("Salud", "Consultas prenatales"),
+]
+
+G2.add_nodes_from(ejemplos)
+G2.add_edges_from(relaciones_ejemplos)
+
+# Dibujar el grafo 2
+plt.figure(figsize=(10, 8))
+pos2 = nx.spring_layout(G2)
+nx.draw(
+    G2, pos2, with_labels=True, node_color='lightgreen', node_size=3000, 
+    font_size=10, font_weight='bold', edge_color='gray'
+)
+plt.title("Grafo de Ejemplos Prácticos", fontsize=16)
+plt.show()
+
+# Grafo 3: Riesgos y reflexiones éticas
+G3 = nx.Graph()
+
+riesgos = [
+    "Privacidad", "Ciberseguridad", "Manipulación", "Ética",
+    "Big Data", "Inteligencia Artificial"
+]
+relaciones_riesgos = [
+    ("Privacidad", "Big Data"),
+    ("Privacidad", "Inteligencia Artificial"),
+    ("Ciberseguridad", "Big Data"),
+    ("Manipulación", "Inteligencia Artificial"),
+    ("Manipulación", "Ética"),
+    ("Ética", "Big Data"),
+]
+
+G3.add_nodes_from(riesgos)
+G3.add_edges_from(relaciones_riesgos)
+
+# Dibujar el grafo 3
+plt.figure(figsize=(8, 8))
+pos3 = nx.circular_layout(G3)
+nx.draw(
+    G3, pos3, with_labels=True, node_color='lightcoral', node_size=3000, 
+    font_size=10, font_weight='bold', edge_color='gray'
+)
+plt.title("Grafo de Riesgos y Reflexiones Éticas", fontsize=16)
+plt.show()
