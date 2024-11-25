@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial para el Futuro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inteligencia Artificial para el Futuro</h1>
+        <p>¿Por dónde empezar? | Pedro Vallejo | TEDxPaseoSantaLucía</p>
+    </header>
+    <section>
+        <h2>Introducción</h2>
+        <p>¿Cómo hemos llegado de pedir balones y bicicletas a pedir asistentes de inteligencia artificial como Alexa? Pedro Vallejo explora cómo la transformación digital está cambiando nuestras vidas.</p>
+        
+        <h2>Transformación Digital</h2>
+        <p>La digitalización ha llevado a la creación masiva de datos. Según Vallejo, estamos en una nueva era donde el análisis de datos es tan valioso como el petróleo.</p>
+        
+        <h2>Aplicaciones de la Inteligencia Artificial</h2>
+        <ul>
+            <li><b>Negocios:</b> Predicción de ventas, optimización de inventarios, y más.</li>
+            <li><b>Educación:</b> Uso de herramientas como ChatGPT para fomentar el pensamiento crítico.</li>
+            <li><b>Salud:</b> Modelos predictivos para mejorar programas sociales y enfrentar crisis.</li>
+        </ul>
+        
+        <h2>Reflexión Ética</h2>
+        <p>La privacidad se está convirtiendo en un lujo. Vallejo insta a usar los datos de manera responsable para evitar abusos.</p>
+        
+        <h2>Conclusión</h2>
+        <p>El futuro está en manos de quienes aprendan a integrar la inteligencia artificial de manera ética y responsable. ¿Estás listo para comenzar?</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 TEDxPaseoSantaLucía</p>
+    </footer>
+</body>
+</html>
