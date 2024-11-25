@@ -144,7 +144,14 @@
                 .attr("fill", "skyblue")
                 .call(drag(simulation));
 
-            node.append("title").text(d => d.id);
+            const text = svg.append("g")
+                .selectAll("text")
+                .data(data.nodes)
+                .join("text")
+                .attr("x", 12)
+                .attr("y", 3)
+                .style("font-size", "12px")
+                .text(d => d.id);
 
             simulation.on("tick", () => {
                 link
@@ -156,6 +163,10 @@
                 node
                     .attr("cx", d => d.x)
                     .attr("cy", d => d.y);
+
+                text
+                    .attr("x", d => d.x + 12)
+                    .attr("y", d => d.y + 3);
             });
 
             function drag(simulation) {
@@ -179,3 +190,4 @@
     </script>
 </body>
 </html>
+
